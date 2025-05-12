@@ -1,18 +1,52 @@
 # Data-Science-Daily-Journal
-My daily data sciences learning log 
+# 📘 Data-Science-Daily-Journal
+**My daily data science learning log**
+---
+### 📅 11 May 2025  
+**Day 1 – Introduction to Data Science**
+---
+#### ✅ Topics Covered:
+- What is Data Science?
+- Importance of data-driven decision-making
+- Overview of key roles: Data Analyst, Data Scientist, Data Engineer
+- Introduction to tools and technologies (Python, SQL, Excel, Power BI)
+#### 🧠 Key Takeaways:
+- Data Science combines statistics, computer science, and domain knowledge.
+- Python and SQL are essential programming languages.
+- Understanding data is more important than just modeling it.
+---
+### 📅 12 May 2025  
+**Day 2 – Power BI Overview**
+---
+### 🔍 What is Power BI?
+- Power BI is a **business analytics tool** by **Microsoft**, released in *2015*.
+- It transforms raw data into interactive **dashboards** and **reports**.
+- Designed for ease of use, with drag-and-drop interfaces and natural language queries.
+---
+### 🚫 Is Power BI Open Source?
+- No, it's a **proprietary tool**.
+- However, it provides **free versions** with limited capabilities.
+- Can connect to a wide variety of **data sources**: Excel, SQL, SharePoint, Azure, APIs.
+---
+### 🧠 Key Concepts in Power BI:
+- **Feature Engineering**:  
+  Transforming raw data into features (columns) that better represent the problem.
+- **Feature Selection**:  
+  Choosing the most important columns for analysis to reduce complexity and improve performance.
+- **Observations (Rows)**:  
+  Each row represents a single record or event in your dataset.
+---
+### 📊 Power BI Use Breakdown (From a Data Analyst's Perspective):
+| Component            | Purpose                                   | Time Spent (%) |
+|---------------------|-------------------------------------------|----------------|
+| Visualizations       | Creating charts, dashboards               | 60%            |
+| Power Query Editor   | Data cleansing and transformation         | 30%            |
+| Data Modeling        | Defining relationships, creating views    | 5%             |
+| DAX                 | Writing measures and calculated columns   | 5%             |
+---
+### 💡 Notes:
+- Visual storytelling is key—use color, labels, and interactivity wisely.
+- Always ensure your data model is optimized before building reports.
+- Power BI is widely used in business settings; mastering it adds significant value.
+---
 
-11 may 2025 - my data Science journey 
-        -----Day-1   basics about data sciences
-12 may 2025 - power bi module
-        -----day-2   Power BI Overview
-- Power BI is a *data visualization tool* developed by Microsoft in *2015*.
-- Not open source, but can handle large data from various sources.
-- Key Concepts:
-  - *Feature Engineering*: Columns = Features
-  - *Feature Selection*: Selecting best columns
-  - *Rows = Observations*
-- Power BI Use Breakdown (Data Analyst Perspective):
-  - 60% Visualizations
-  - 30% Power Query (Transformations)
-  - 5% Data Modeling (Relationships, Views)
-  - 5% DAX (Data Analysis Expressions)
