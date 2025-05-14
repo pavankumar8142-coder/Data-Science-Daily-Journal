@@ -126,4 +126,4 @@ You can add static or dynamic text using:
 1. Go to *Insert > Text Box*
 2. Enter your title, caption, or description
 3. Format with font size, color, bold/italic, alignment
-
+## dash in power bi
