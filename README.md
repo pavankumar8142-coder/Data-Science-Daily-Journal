@@ -126,4 +126,59 @@ You can add static or dynamic text using:
 1. Go to *Insert > Text Box*
 2. Enter your title, caption, or description
 3. Format with font size, color, bold/italic, alignment
-
+# 📊 Power BI Learning Journey -day -4
+## 1. Numeric Card
+*Purpose*: Display a single, prominent value such as total sales, profit, or count.
+*Steps*:
+- Go to the Visualizations pane and select *Card*.
+- Drag a measure (e.g., Total Sales) into the *Fields* area.
+- Customize fonts, colors, and display units via the *Format* pane.
+*Use Case*: Highlight key performance indicators (KPIs).
+---
+## 2. Table
+*Purpose*: Show detailed data in rows and columns.
+*Steps*:
+- Select the *Table* visual.
+- Drag fields into the *Values* area.
+- Use the *Format* pane to customize styles, sorting, and column formats.
+*Use Case*: Display raw data like transaction records.
+---
+## 3. Matrix
+*Purpose*: Create a pivot-style summary with row and column groupings.
+*Steps*:
+- Select the *Matrix* visual.
+- Drag fields into *Rows, **Columns, and **Values* areas.
+- Use expand/collapse and subtotals for better structure.
+*Use Case*: Show performance by category and time (e.g., sales by region/month).
+---
+## 4. Pie Chart
+*Purpose*: Show part-to-whole relationships with slices.
+*Steps*:
+- Insert a *Pie Chart*.
+- Add a category field to *Legend, and a numeric field to **Values*.
+- Customize labels, tooltips, and slice colors.
+*Use Case*: Visualize proportions like revenue share by product.
+---
+## 5. Donut Chart
+*Purpose*: Like a pie chart but with a center area for total display.
+*Steps*:
+- Choose the *Donut Chart* visual.
+- Set *Legend* and *Values*.
+- Use the center to show totals or KPIs.
+*Use Case*: Show categorical proportions with emphasis on the total.
+---
+## 6. Conditional Formatting
+*Purpose*: Highlight data based on rules with colors, icons, or bars.
+*Steps*:
+- Click dropdown beside a field in a *Table* or *Matrix*.
+- Select *Conditional Formatting* (Background color, Font color, Data bars, Icons).
+- Define custom rules or use default scaling.
+*Use Case*: Highlight top-performing salespeople or risky regions.
+---
+## 7. Funnel Chart
+*Purpose*: Visualize sequential processes with drop-offs at each stage.
+*Steps*:
+- Select the *Funnel Chart*.
+- Add a categorical field to *Group, and a numeric field to **Values*.
+- Customize colors and label placements.
+*Use Case*: Track sales funnel or conversion rates.
