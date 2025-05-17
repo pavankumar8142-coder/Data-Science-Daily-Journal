@@ -264,5 +264,111 @@ Same data as above but visualized vertically.
 - *Clustered*: Groups values side-by-side for comparison
 ---
 ## Summary
+This session focused on understanding the *structure, types, and interpretation* of bar and column charts using real sales data by segment and region.
+ Visualizations included both *stacked* and *clustered* styles in *bar* and *column* formats.
 
-This session focused on understanding the *structure, types, and interpretation* of bar and column charts using real sales data by segment and region. Visualizations included both *stacked* and *clustered* styles in *bar* and *column* formats.
+## power Bi learning Journey -Day -6
+
+# Ribbon Chart
+
+## How It Works
+- Categories are *stacked* and *reordered* at each time interval, with *ribbons* connecting their positions.
+## Purpose
+- Visualizes *ranking changes* of data categories (e.g., products, regions) over time.
+## Key Insight
+- Shows which category dominates at each time point and how the ranking evolves.  
+  Example: Product A overtakes Product B in Q2.
+---
+## Data Requirements
+1. *X-axis*: Time-based field (e.g., year, month, quarter).
+2. *Y-axis*: Numeric measures (e.g., sales, profit).
+3. *Legend*: Categorical field (e.g., product, region).
+---
+## Example Sample Data
+| Month     | Product | Sales |
+|-----------|---------|-------|
+| Jan 2023  | A       | 500   |
+| Jan 2023  | B       | 300   |
+| Feb 2023  | A       | 450   |
+| Feb 2023  | B       | 600   |
+---
+## Why Use a Ribbon Chart?
+1. *Track Dominance*:  
+   Instantly see which category leads at each time interval.
+2. *Identify Trends*:  
+   Spot rising or falling categories.
+3. *Competitive Analysis*:  
+   Compare performance across segments.
+---
+## Best Use Cases
+- *Market share shifts* between competitors.
+- Ideal for *storytelling* who's winning and losing over time.
+## Scatter Plot (Linear Regression)
+### What is the difference between:
+- *Univariate Analysis*
+- *Bi-variate Analysis*
+- *Multi-variate Analysis*
+> *Histogram* is used to find the amount of data between the intervals.
+---
+## Univariate Analysis
+*Definition*: Univariate Analysis = ID representation of data (one variable). It’s analyzing a single variable at a time.
+ The main goal is to describe and summarize the variable’s characteristics.
+### Types of Variables:
+- *Numerical* (continuous or discrete)
+- *Categorical* (nominal, naming, or ordinal)
+---
+## Techniques - Numerical Data:
+- Summary Statistics (mean, median, std dev)
+- Histograms
+- Box Plots
+- Density Plots
+### Categorical Data:
+- Frequency Tables
+- Bar Plots
+- Pie Charts
+---
+## Purpose:
+- Understand the distribution (normal, skewed)
+- Calculate central tendencies (mean, median, mode)
+- Calculate dispersions (range, variance, std dev)
+- Identify outliers (skewness, kurtosis)
+### Example:
+Analyzing the age of customers in a dataset:
+- Mean age = 35.7
+- Age distribution = right-skewed
+- Outliers = ages above 80
+---
+## Bi-variate Analysis (Two variables) → 2D representation
+*Definition*: Bi-variate analysis explores the relationship between two variables. It helps in identifying correlation/association.
+### Types of Variable Combinations:
+| Variable 1 | Variable 2 | Common Methods                         |
+|------------|------------|----------------------------------------|
+| Numerical  | Numerical  | Scatter Plots / Correlation / Regression |
+| Numerical  | Categorical| Boxplots / t-test / ANOVA              |
+| Categorical| Categorical| Grouped Bar Plot / Cross-tabulation    |
+### Example:
+Analyzing relationship between education level (categorical) and average salary (numerical).
+- Higher education → Higher average salary
+- Use Box Plot or ANOVA for significance testing
+- Scatter plot → If numeric on x and y axis
+---
+## Multivariate Analysis
+*Definition*: 3 or more variables (one representation). We are going to compare with other representation.
+Example: pair plot
+---
+## Outliers
+*Definition*: An outlier is:
+1. A data point that differs significantly from other observations.
+2. A value much higher or lower than most of the others in a dataset.
+3. Someone or something that stands out from the rest; an anomaly.
+---
+## Line Chart
+- *x-axis*: date, time field, places
+- *y-axis*: numeric field (e.g. sales, revenue, values)
+- *Legend*: category field (region, product)
+### Trend Analysis
+Show how a value (e.g. sales...) changes over time
+- Detect upward/downward trends, seasonality, and patterns
+---
+## Area Chart
+Also same as line chart but filled with color.
