@@ -372,3 +372,27 @@ Show how a value (e.g. sales...) changes over time
 ---
 ## Area Chart
 Also same as line chart but filled with color.
+## learning power bi day -7
+
+# Treemap
+1. Treemaps show data in nested rectangles for easy comparison.
+2. Use them to visualize categories and their values, like sales or inventory.
+3. Rectangle size shows the value (e.g., total sales).
+4. Colors help separate different categories.
+5. Pick the treemap icon from "Visualizations" in Power BI.
+6. Drag a category (e.g., Region) to the "Category" field.
+7. Drag a number (e.g., Sales) to the "Values" field.
+8. Add hierarchy (e.g., Region > Product) for nested view.
+| Feature       | Legend         | Detail                       |
+|---------------|----------------|------------------------------|
+| Purpose       | color grouping | Show individual data points |
+| Visual types  | Bar, line, pie, etc. | Scatter chart, map, etc. |
+| Grouping?     | yes            | NO                           |
+| Color split?  | yes            | NO                           |
+---
+- *Nobody will use Treemap in real time*
+  1. It occupies most of the space.
+  2. It will take a lot of time for developer.
+  ### Waterfall Chart?
+A Waterfall chart shows how you move from starting values to an ending value by showing all the increases and decreases along the way.
+---
