@@ -396,3 +396,57 @@ Also same as line chart but filled with color.
   ### Waterfall Chart?
 A Waterfall chart shows how you move from starting values to an ending value by showing all the increases and decreases along the way.
 ---
+### learning power bi day-8
+
+# RGB Colors in Power BI
+- *RGB* stands for Red, Green, Blue. It's a color model used to create a wide range of colors by combining these three primary colors in varying intensities.
+- In Power BI, RGB colors are commonly applied using *Hex codes* (hexadecimal values), which represent RGB values.
+## Where RGB/Hex colors are used in Power BI:
+- Data colors in charts
+- Conditional formatting in tables/matrix
+- Theme JSON files for report styling
+- Custom visuals that support styling (e.g., HTML viewer)
+### learning power bi day-9
+# Feature Engineering
+## What is Feature Engineering?
+The process of creating, modifying, or selecting features (columns) in your data to help models perform better.
+## Key Steps:
+### 1. Handle Missing Data
+- Fill blanks using *mean, **median, or **mode*
+- Or mark them as "missing" if needed
+### 2. Convert Categorical Data to Numbers
+- Use *Label Encoding* (e.g., low/medium/high → 0/1/2)
+- *One-Hot Encoding* (creates new columns for each category)
+### 3. Transform Variables
+- Change values to reduce skewness (e.g., apply log, square root)
+- Helps model understand the data better
+### 4. Handle Outliers
+- Detect extreme values using:
+  - *Z-score*
+  - *IQR* (interquartile range)
+- Remove or transform them if they affect result
+### 5. Scale the Data
+- Put all numbers on a similar scale using:
+  - *Standardization* (mean = 0, std = 1)
+  - *Normalization* (values between 0 and 1)
+---
+# Feature Selection (Variable Selection)
+## What is Feature Selection?
+> The process of choosing the most important variables (features) from your dataset to improve model performance and reduce complexity.
+## 1. Filter Methods
+- Use statistics to select features
+### Examples:
+- *Correlation*: Drop features that are highly correlated with each other
+- *Chi-square test*: Drop features for categorical variables
+- *ANOVA*: For comparing means of features across categories
+## 2. Wrapper Methods
+- Use a model to test feature combinations
+### Examples:
+- *Forward Selection*: Start with no features, add one by one
+- *Backward Elimination*: Start with all features, remove one by one
+- *Recursive Feature Elimination (RFE)*
+## 3. Embedded Methods
+- Feature selection happens while training the model
+### Examples:
+- *Lasso Regression* (uses L1 regularization)
+- *Tree-based models* (e.g., random forest feature importance)
