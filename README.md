@@ -580,7 +580,6 @@ Power Query is a powerful tool in Excel and Power BI used for importing, cleanin
   2. Go to *Transform* > *Rounding*.
 ---
 ## ℹ 14. Information
-
 - *Purpose*: Get information about the values or data types.
 - *Options*:
   - *Is Even*
@@ -591,7 +590,7 @@ Power Query is a powerful tool in Excel and Power BI used for importing, cleanin
 - *Steps*:
   1. Select column.
   2. Go to *Transform* > *Information*.
----
+--
 ## 🗃 15. Sorting
 - *Purpose*: Arrange data in ascending or descending order.
 - *Steps*:
