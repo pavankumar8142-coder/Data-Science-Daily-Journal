@@ -450,3 +450,84 @@ The process of creating, modifying, or selecting features (columns) in your data
 ### Examples:
 - *Lasso Regression* (uses L1 regularization)
 - *Tree-based models* (e.g., random forest feature importance)
+### learning power bi day -11
+
+# 📊 Power Query Functions - A Detailed Guide
+Power Query is a powerful tool in Excel and Power BI used for importing, cleaning, transforming, and preparing data for analysis. Below is a detailed explanation of key Power Query functions and steps
+---
+## 🔁 1. New Source
+- *Purpose*: Import data from various sources (Excel, CSV, SQL Server, Web, etc.)
+- *Steps*:
+  1. Go to *Home* > *New Source*.
+  2. Choose your data source type.
+  3. Navigate and load the data.
+---
+## 💾 2. Close & Apply
+- *Purpose*: Save the changes made in Power Query Editor and load the data into Excel or Power BI.
+- *Options*:
+  - *Close & Load* (Excel)
+  - *Close & Apply* (Power BI)
+- *Steps*:
+  1. After making transformations, go to *Home*.
+  2. Click *Close & Apply*.
+---
+## ✅ 3. Choose Columns
+- *Purpose*: Select specific columns to keep in your dataset.
+- *Steps*:
+  1. Go to *Home* > *Choose Columns*.
+  2. Check/uncheck columns as needed.
+---
+## ❌ 4. Remove Columns
+- *Purpose*: Delete one or more columns.
+- *Steps*:
+  - Right-click the column header > *Remove*.
+  - Or go to *Home* > *Remove Columns*.
+---
+## 🔍 5. Keep Rows
+- *Purpose*: Retain specific rows based on criteria.
+- *Options*:
+  - *Keep Top Rows*
+  - *Keep Bottom Rows*
+  - *Keep Range of Rows*
+  - *Keep Duplicates*
+  - *Keep Errors*
+- *Steps*:
+  1. Go to *Home* > *Keep Rows*.
+  2. Choose your desired option and specify parameters.
+---
+## 🗑 6. Remove Rows
+- *Purpose*: Delete specific rows based on conditions.
+- *Options*:
+  - *Remove Top Rows*
+  - *Remove Bottom Rows*
+  - *Remove Duplicates*
+  - *Remove Errors*
+  - *Remove Blank Rows*
+- *Steps*:
+  1. Go to *Home* > *Remove Rows*.
+  2. Select the appropriate option.
+---
+## ✂ 7. Split Column
+- *Purpose*: Divide a column into multiple columns.
+- *Options*:
+  - By delimiter (comma, space, etc.)
+  - By number of characters
+  - By positions
+- *Steps*:
+  1. Select the column.
+  2. Go to *Transform* > *Split Column*.
+---
+## 🔁 8. Replace Values
+- *Purpose*: Replace specific values in a column.
+- *Steps*:
+  1. Right-click on the column > *Replace Values*.
+  2. Enter the old and new values.
+---
+## 🪜 9. Applied Steps
+- *Purpose*: Track and manage every transformation applied.
+- *Where: Appears in the **right pane* of Power Query Editor.
+- *Features*:
+  - View all steps chronologically.
+  - Rename, delete, or reorder steps.
+  - Each step is written in *M Language*.
+---
