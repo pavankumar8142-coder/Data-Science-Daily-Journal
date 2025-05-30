@@ -531,3 +531,73 @@ Power Query is a powerful tool in Excel and Power BI used for importing, cleanin
   - Rename, delete, or reorder steps.
   - Each step is written in *M Language*.
 ---
+## 📈 10. Statistics
+- *Purpose*: Perform statistical calculations.
+- *Options*:
+  - *Minimum*
+  - *Maximum*
+  - *Average*
+  - *Median*
+  - *Standard Deviation*
+  - *Count*
+- *Steps*:
+  1. Select numeric column(s).
+  2. Go to *Transform* > *Statistics*.
+---
+## 📏 11. Standard
+- *Purpose*: Perform standard mathematical operations.
+- *Options*:
+  - *Add*
+  - *Subtract*
+  - *Multiply*
+  - *Divide*
+  - *Percentage*
+  - *Integer Divide*
+  - *Modulo*
+- *Steps*:
+  1. Select column(s).
+  2. Go to *Transform* > *Standard*.
+---
+## 🔬 12. Scientific
+- *Purpose*: Perform scientific calculations.
+- *Options*:
+  - *Logarithm*
+  - *Exponential*
+  - *Power*
+  - *Square Root*
+- *Steps*:
+  1. Select the column.
+  2. Go to *Transform* > *Scientific*.
+---
+## 🔘 13. Rounding
+- *Purpose*: Round numerical values.
+- *Options*:
+  - *Round Up*
+  - *Round Down*
+  - *Round to Nearest*
+- *Steps*:
+  1. Select the numeric column.
+  2. Go to *Transform* > *Rounding*.
+---
+## ℹ 14. Information
+
+- *Purpose*: Get information about the values or data types.
+- *Options*:
+  - *Is Even*
+  - *Is Odd*
+  - *Is Error*
+  - *Is Null*
+  - *Is Number*
+- *Steps*:
+  1. Select column.
+  2. Go to *Transform* > *Information*.
+---
+## 🗃 15. Sorting
+- *Purpose*: Arrange data in ascending or descending order.
+- *Steps*:
+  1. Select a column.
+  2. Go to *Home* > *Sort Ascending / Sort Descending*.
+  3. Or use *Sort* button on the column header.
+---
+> ✅ *Tip: All actions in Power Query are **non-destructive* and tracked as steps, so you can always undo or modify them.
+---
