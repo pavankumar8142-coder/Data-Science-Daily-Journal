@@ -664,3 +664,24 @@ m
 each if [Sales] > 1000 then "High"
 else if [Sales] > 500 then "Medium"
 else "Low"
+## 7. Column From Examples
+Generates a new column based on sample outputs you provide. Power Query uses AI to infer the logic.
+### 📌 How to Use:
+- Go to *"Add Column"* tab → Click on *"Column from Examples"*.
+- Choose either *"From All Columns"* or *"From Selection"*.
+- Type sample outputs and let Power Query create the formula.
+### 🧪 Example Results
+m
+Table.AddColumn(Source, "Initial", each Text.Start([Name], 1))
+If you typed "J" for "John" and "M" for "Mary", Power Query would infer that you want the first letter of the "Name" column.
+---
+## ✅ Summary
+| Function               | Purpose                             | M Code Sample                                         |
+|------------------------|-------------------------------------|-------------------------------------------------------|
+| Group By               | Aggregate rows by a column          | Table.Group(...)                                    |
+| Reverse Rows           | Flip the order of rows              | Table.ReverseRows(Source)                           |
+| Count Rows             | Get the number of rows              | Table.RowCount(Source)                              |
+| Detect Data Type       | Set appropriate column types        | Table.TransformColumnTypes(...)                     |
+| Replace Values         | Replace specific values             | Table.ReplaceValue(...)                             |
+| Conditional Column     | Create column using IF logic        | Table.AddColumn(..., each if ... then ... else ...) |
+| Column From Examples   | Auto-create column logic by example | Table.AddColumn(..., each Text.Start(...))          |
