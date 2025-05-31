@@ -610,6 +610,10 @@ The *Group By* function allows you to group rows in a table based on the values 
 - Select one or more columns to group by.
 - Define the operation (e.g., sum, count, average) on other columns.
 ### 🧪 Example:
+m
+Table.Group(Source, "Department", {
+    {"TotalSalary", each List.Sum([Salary]), type number}
+})
 This groups the data by "Department" and calculates the total salary for each department.
 ---
 ## 2. Reverse Rows
@@ -619,7 +623,6 @@ This function reverses the order of rows in a table — the last row becomes fir
 ### 🧪 Example:
 m
 Table.ReverseRows(Source)
-
 Useful for flipping the order of sorted data or undoing ascending/descending order.
 --
 ## 3. Count Rows
@@ -627,3 +630,37 @@ Used to get the number of rows in a table.
 ### 🧪 Example:
 Table.RowCount(Source)
 This returns a single integer representing the total number of rows in the Source table.
+## 4. Detect Data Type
+Automatically detects and applies appropriate data types (e.g., text, number, date) to columns.
+### 📌 How to Use:
+- Go to *"Transform"* tab → Click on *"Detect Data Type"*.
+### 🧪 Example:
+m
+Table.TransformColumnTypes(Source, {
+    {"OrderDate", type date},
+    {"Amount", type number}
+})
+Power Query suggests and applies types based on the column's values.
+---
+## 5. Replace Values
+Replaces specific values in a selected column with new values.
+### 📌 How to Use:
+- Select the column.
+- Go to *"Transform"* tab → Click on *"Replace Values"*.
+### 🧪 Example:
+m
+Table.ReplaceValue(Source, "Pending", "In Progress", Replacer.ReplaceText, {"Status"})
+Replaces the value "Pending" with "In Progress" in the "Status" column.
+---
+## 6. Conditional Column
+Creates a new column based on logical conditions or rules.
+### 📌 How to Use:
+- Go to *"Add Column"* tab → Click on *"Conditional Column"*.
+### 🧪 Example:
+m
+Table.AddColumn(Source, "Category", each if [Sales] > 1000 then "High" else "Low")
+You can nest conditions as well:
+m
+each if [Sales] > 1000 then "High"
+else if [Sales] > 500 then "Medium"
+else "Low"
