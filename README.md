@@ -407,6 +407,7 @@ A Waterfall chart shows how you move from starting values to an ending value by 
 - Theme JSON files for report styling
 - Custom visuals that support styling (e.g., HTML viewer)
 ### learning power bi day-9
+
 # Feature Engineering
 ## What is Feature Engineering?
 The process of creating, modifying, or selecting features (columns) in your data to help models perform better.
@@ -609,11 +610,6 @@ The *Group By* function allows you to group rows in a table based on the values 
 - Select one or more columns to group by.
 - Define the operation (e.g., sum, count, average) on other columns.
 ### 🧪 Example:
-m
-Table.Group(Source, "Department", {
-    {"TotalSalary", each List.Sum([Salary]), type number}
-})
-
 This groups the data by "Department" and calculates the total salary for each department.
 ---
 ## 2. Reverse Rows
@@ -629,6 +625,5 @@ Useful for flipping the order of sorted data or undoing ascending/descending ord
 ## 3. Count Rows
 Used to get the number of rows in a table.
 ### 🧪 Example:
-m
 Table.RowCount(Source)
 This returns a single integer representing the total number of rows in the Source table.
