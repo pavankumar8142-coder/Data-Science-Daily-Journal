@@ -600,3 +600,35 @@ Power Query is a powerful tool in Excel and Power BI used for importing, cleanin
 ---
 > ✅ *Tip: All actions in Power Query are **non-destructive* and tracked as steps, so you can always undo or modify them.
 ---
+### power bi learning day- 12
+
+## 1. Group By
+The *Group By* function allows you to group rows in a table based on the values of one or more columns, and perform aggregations like sum, average, count, etc.
+### 📌 How to Use:
+- Go to the *"Home"* tab → Click on *"Group By"*.
+- Select one or more columns to group by.
+- Define the operation (e.g., sum, count, average) on other columns.
+### 🧪 Example:
+m
+Table.Group(Source, "Department", {
+    {"TotalSalary", each List.Sum([Salary]), type number}
+})
+
+This groups the data by "Department" and calculates the total salary for each department.
+---
+## 2. Reverse Rows
+This function reverses the order of rows in a table — the last row becomes first and vice versa.
+### 📌 How to Use:
+- Go to the *"Transform"* tab → Click on *"Reverse Rows"*.
+### 🧪 Example:
+m
+Table.ReverseRows(Source)
+
+Useful for flipping the order of sorted data or undoing ascending/descending order.
+--
+## 3. Count Rows
+Used to get the number of rows in a table.
+### 🧪 Example:
+m
+Table.RowCount(Source)
+This returns a single integer representing the total number of rows in the Source table.
