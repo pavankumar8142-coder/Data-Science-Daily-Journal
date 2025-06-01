@@ -726,3 +726,11 @@ The API takes the order and brings you the result.
 - Summarize main characteristics
 - Discover patterns, anomalies, or relationships
 - Prepare for further analysis or modeling
+
+# Why is EDA Important?
+- Helps **understand the data** before modeling
+- Identifies **missing values**, **outliers**, and **data types**
+- Reveals **relationships between variables**
+- Aids in **feature selection** and **engineering**
+- Ensures better **model accuracy** by using clean and relevant data
+
