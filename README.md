@@ -720,3 +720,9 @@ json
 APIs are like *waiters* in a restaurant.
 You (the app) ask for something.
 The API takes the order and brings you the result.
+# What is EDA in Data Science? 
+**EDA** stands for **Exploratory Data Analysis**. It is the process of analyzing datasets to:
+- Understand their structure
+- Summarize main characteristics
+- Discover patterns, anomalies, or relationships
+- Prepare for further analysis or modeling
