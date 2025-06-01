@@ -684,4 +684,39 @@ If you typed "J" for "John" and "M" for "Mary", Power Query would infer that you
 | Detect Data Type       | Set appropriate column types        | Table.TransformColumnTypes(...)                     |
 | Replace Values         | Replace specific values             | Table.ReplaceValue(...)                             |
 | Conditional Column     | Create column using IF logic        | Table.AddColumn(..., each if ... then ... else ...) |
-| Column From Examples   | Auto-create column logic by example | Table.AddColumn(..., each Text.Start(...))          |
+| Column From Examples   | Auto-create column logic by example | Table.AddColumn(..., each Text.Start(...))          
+
+### power bi learing day -13
+
+# 🌐 What is an API?
+*API* stands for *Application Programming Interface*.
+It allows different software programs to talk to each other.
+---
+## 🔧 Example
+Imagine you have a weather app. The app needs weather data.
+It can use an API like this:
+
+GET https://api.weather.com/current?city=London
+
+The server will respond with:
+json
+{
+  "city": "London",
+  "temperature": "18°C",
+  "condition": "Sunny"
+}
+---
+## 📦 Why APIs are Useful
+- ✅ Share data between programs
+- ✅ Connect to services (like payment, maps, weather)
+- ✅ Build apps faster
+---
+## 🧱 API Types
+- *REST API* – uses HTTP (like visiting websites)
+- *GraphQL API* – flexible, asks for specific data
+- *WebSocket API* – real-time, two-way communication
+---
+## 📝 Summary
+APIs are like *waiters* in a restaurant.
+You (the app) ask for something.
+The API takes the order and brings you the result.
