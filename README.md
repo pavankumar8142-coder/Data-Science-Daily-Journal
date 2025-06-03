@@ -772,3 +772,24 @@ The API takes the order and brings you the result.
 - Merging datasets with the same structure (e.g., sales from different stores).
 - Handling "folder imports" where each file is a piece of the full data.
 *Important:* All appended tables must have matching columns (same names and types).
+## 6. Pivot Column
+*What it Does:* Converts row values into new column headers, aggregating values as needed.
+*When to Use:*
+- Summarizing repeated values into a more readable format.
+- Creating cross-tab reports (e.g., sales by month as columns).
+- Useful for KPIs or comparison across categories.
+*Example:* Turning rows like:
+| Product | Month | Sales |
+into:
+| Product | Jan | Feb | Mar |
+---
+## 7. Unpivot Columns
+*What it Does:* Takes multiple columns and converts them into attribute-value pairs.
+*When to Use:*
+- When your data is "too wide" (e.g., Jan, Feb, Mar as separate columns).
+- Preparing wide Excel reports for analysis.
+- Ideal before loading into visuals that need column-based data.
+*Example:* Converting:
+| Product | Jan | Feb | Mar |
+into:
+| Product | Month | Sales |
