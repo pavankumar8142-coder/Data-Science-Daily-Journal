@@ -753,4 +753,22 @@ The API takes the order and brings you the result.
 - To make the dataset understandable and readable.
 - Standardizing names across multiple datasets.
 - Renaming auto-generated or technical names (e.g., renaming "Col1" to "Product ID").
-
+## 4. Merge Queries
+*What it Does:* Combines two tables horizontally based on matching values in key columns (like a SQL JOIN).
+*When to Use:*
+- Enriching a table with additional info from another table (e.g., adding customer names to a sales table).
+- Combining lookup tables or bringing in reference data.
+- Matching transactions with master data.
+*Join Types:*
+- Left Outer: Keep all from first, match from second.
+- Inner: Keep only matching rows.
+- Full Outer: Keep everything from both.
+- Anti Joins: Find mismatches.
+---
+## 5. Append Queries
+*What it Does:* Combines two or more tables vertically (stacking rows like a SQL UNION).
+*When to Use:*
+- Combining monthly or regional reports into a single table.
+- Merging datasets with the same structure (e.g., sales from different stores).
+- Handling "folder imports" where each file is a piece of the full data.
+*Important:* All appended tables must have matching columns (same names and types).
