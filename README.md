@@ -733,4 +733,24 @@ The API takes the order and brings you the result.
 - Reveals **relationships between variables**
 - Aids in **feature selection** and **engineering**
 - Ensures better **model accuracy** by using clean and relevant data
+### Learning power bi day-14
+## 1. Use First Row as Headers
+*What it Does:* Promotes the first row in your dataset to be the column headers.
+*When to Use:* 
+- When you import a file (like Excel or CSV) and the actual headers are in the first row, not the system-generated ones (Column1, Column2…).
+- Common in flat file exports or web-scraped data.
+---
+## 2. Replace Values
+*What it Does:* Finds a specific value and replaces it with another one in selected columns.
+*When to Use:*
+- Cleaning placeholder values like "N/A", "null", "Unknown".
+- Replacing codes (e.g., 1 = "Yes", 0 = "No").
+- Fixing typos in text values or standardizing naming.
+---
+## 3. Rename Columns
+*What it Does:* Changes column names to meaningful ones.
+*When to Use:*
+- To make the dataset understandable and readable.
+- Standardizing names across multiple datasets.
+- Renaming auto-generated or technical names (e.g., renaming "Col1" to "Product ID").
 
