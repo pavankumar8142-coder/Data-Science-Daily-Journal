@@ -793,3 +793,15 @@ into:
 | Product | Jan | Feb | Mar |
 into:
 | Product | Month | Sales |
+## 8. Format Values
+*What it Does:* Adjusts text, number, and date formats for consistency or presentation.
+*When to Use:*
+- Trimming extra spaces in text (common from copied or messy data).
+- Standardizing case (UPPER/lower/Proper) for names or categories.
+- Converting dates into specific string formats for visuals.
+- Formatting numbers (e.g., thousands separator, decimals).
+*Common Transformations:*
+- Trim whitespace: Clean up names/IDs.
+- Uppercase: Standardize category labels.
+- Format dates: Show only month/year or full date in reports.
+*Tip:* Clean formatting improves data model consistency and avoids subtle bugs during joins and filtering.
