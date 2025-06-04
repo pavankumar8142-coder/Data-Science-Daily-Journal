@@ -805,6 +805,8 @@ into:
 - Uppercase: Standardize category labels.
 - Format dates: Show only month/year or full date in reports.
 *Tip:* Clean formatting improves data model consistency and avoids subtle bugs during joins and filtering.
+
+### Learning power bi day-15
 # Power BI DAX Guide – Basic Functions
 
 1. COUNT  
