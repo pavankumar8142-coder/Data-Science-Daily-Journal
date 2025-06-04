@@ -896,3 +896,75 @@ Syntax: ROUND(Number, NumDigits)
 Example:  
 dax
 = ROUND(Sales[Revenue], 2)
+# Power BI DAX Guide – Intermediate Functions
+
+1. SUMX  
+Purpose: Iterates over a table and returns the sum of an expression evaluated row by row.  
+Syntax: SUMX(Table, Expression)  
+Example:  
+dax
+= SUMX(Sales, Sales[Quantity] * Sales[UnitPrice])
+
+2. FILTER  
+Purpose: Returns a table that includes only the rows that meet specified criteria.  
+Syntax: FILTER(Table, Expression)  
+Example:  
+dax
+= FILTER(Sales, Sales[Quantity] > 100)
+
+3. CALCULATE  
+Purpose: Modifies the context of a calculation. Often used with filter expressions.  
+Syntax: CALCULATE(Expression, Filter1, Filter2, ...)  
+Example:  
+dax
+= CALCULATE(SUM(Sales[Revenue]), Sales[Region] = "East")
+
+4. VALUES  
+Purpose: Returns a one-column table with the distinct values from a column.  
+Syntax: VALUES(Column)  
+Example:  
+dax
+= VALUES(Sales[Product])
+
+5. SELECTEDVALUE  
+Purpose: Returns the value when the context has been filtered to one distinct value, otherwise returns alternate result.  
+Syntax: SELECTEDVALUE(Column, AlternateResult)  
+Example:  
+dax
+= SELECTEDVALUE(Sales[Region], "No Region Selected")
+
+6. ALL  
+Purpose: Removes all filters from a table or column.  
+Syntax: ALL(Table/Column)  
+Example:  
+dax
+= CALCULATE(SUM(Sales[Revenue]), ALL(Sales))
+
+7. RELATED  
+Purpose: Fetches a related value from another table using existing relationships.  
+Syntax: RELATED(ColumnName)  
+Example:  
+dax
+= RELATED(Product[Category])
+
+8. CREATE NEW COLUMN  
+Purpose: Creates a calculated column based on row-level logic.  
+Syntax: ColumnName = Expression  
+Example:  
+dax
+ProfitMargin = Sales[Profit] / Sales[Revenue]
+
+9. CREATE NEW TABLE  
+Purpose: Creates a calculated table based on an expression.  
+Syntax: TableName = Expression  
+Example:  
+dax
+HighSales = FILTER(Sales, Sales[Revenue] > 1000)
+
+10. EARLIER  
+Purpose: Refers to an earlier row context, often used in calculated columns.  
+Syntax: EARLIER(Column)  
+Example:  
+dax
+= CALCULATE(COUNT(Sales[OrderID]), FILTER(Sales, Sales[CustomerID] = EARLIER(Sales[CustomerID])))
+
