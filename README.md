@@ -805,3 +805,94 @@ into:
 - Uppercase: Standardize category labels.
 - Format dates: Show only month/year or full date in reports.
 *Tip:* Clean formatting improves data model consistency and avoids subtle bugs during joins and filtering.
+# Power BI DAX Guide – Basic Functions
+
+1. COUNT  
+Purpose: Counts non-blank numeric values in a column.  
+Syntax: COUNT(Column)  
+Example:  
+dax
+= COUNT(Sales[OrderID])
+
+2. COUNTA  
+Purpose: Counts non-blank values of any data type in a column.  
+Syntax: COUNTA(Column)  
+Example:  
+dax
+= COUNTA(Products[ProductName])
+
+3. COUNTROWS  
+Purpose: Counts the number of rows in a table.  
+Syntax: COUNTROWS(Table)  
+Example:  
+dax
+= COUNTROWS(Sales)
+
+4. SUM  
+Purpose: Adds all numeric values in a column.  
+Syntax: SUM(Column)  
+Example:  
+dax
+= SUM(Sales[Revenue])
+
+5. AVERAGE  
+Purpose: Returns the average of numeric values.  
+Syntax: AVERAGE(Column)  
+Example:  
+dax
+= AVERAGE(Sales[Revenue])
+
+6. MAX  
+Purpose: Returns the largest value in a column.  
+Syntax: MAX(Column)  
+Example:  
+dax
+= MAX(Sales[Profit])
+
+7. MIN  
+Purpose: Returns the smallest value in a column.  
+Syntax: MIN(Column)  
+Example:  
+dax
+= MIN(Sales[Cost])
+
+8. MEDIAN  
+Purpose: Returns the median (middle) value in a column.  
+Syntax: MEDIAN(Column)  
+Example:  
+dax
+= MEDIAN(Sales[Revenue])
+
+9. DIVIDE  
+Purpose: Performs safe division and avoids divide-by-zero errors.  
+Syntax: DIVIDE(Numerator, Denominator, AlternateResult)  
+Example:  
+dax
+= DIVIDE(Sales[Revenue], Sales[Cost], 0)
+
+10. DISTINCTCOUNT  
+Purpose: Counts the number of unique values in a column.  
+Syntax: DISTINCTCOUNT(Column)  
+Example:  
+dax
+= DISTINCTCOUNT(Sales[CustomerID])
+
+11. ABS  
+Purpose: Returns the absolute value of a number.  
+Syntax: ABS(Number)  
+Example:  
+dax
+= ABS(Sales[Profit])
+
+12. INT  
+Purpose: Rounds a number down to the nearest integer.  
+Syntax: INT(Number)  
+Example:  
+dax
+= INT(Sales[Revenue])
+13. ROUND  
+Purpose: Rounds a number to a specified number of digits.  
+Syntax: ROUND(Number, NumDigits)  
+Example:  
+dax
+= ROUND(Sales[Revenue], 2)
