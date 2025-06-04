@@ -970,3 +970,169 @@ Example:
 dax
 = CALCULATE(COUNT(Sales[OrderID]), FILTER(Sales, Sales[CustomerID] = EARLIER(Sales[CustomerID])))
 
+# Power BI DAX Guide – Essential Advanced Functions
+
+This guide includes the most important and commonly used advanced DAX functions, each with its purpose, syntax, example, and explanation.
+
+---
+
+## 1. RANKX  
+*Purpose:* Returns the ranking of a number in a list of numbers for each row in the table.  
+*Syntax:* RANKX(Table, Expression, [Value], [Order], [Ties])  
+*Example:*
+dax
+RANKX(ALL(Sales), SUM(Sales[Revenue]))
+
+*Explanation:* Removes filters and ranks each row by total revenue across all rows.
+
+---
+
+## 2. GENERATE  
+*Purpose:* Combines two tables by evaluating a table expression for each row of the first table.  
+*Syntax:* GENERATE(Table1, Table2)  
+*Example:*
+dax
+GENERATE(VALUES(Product[Category]), VALUES(Sales[CustomerID]))
+
+*Explanation:* Creates all combinations of product categories and customer IDs.
+
+---
+
+## 3. TREATAS  
+*Purpose:* Applies the result of a table expression as a filter to columns from an unrelated table.  
+*Syntax:* TREATAS(TableExpression, Column1, Column2, ...)  
+*Example:*
+dax
+CALCULATE(SUM(Sales[Revenue]), TREATAS(VALUES(Regions[RegionName]), Sales[Region]))
+
+*Explanation:* Applies region names from Regions as filters to the Sales table.
+
+---
+
+## 4. ISFILTERED  
+*Purpose:* Checks whether a column is being filtered directly.  
+*Syntax:* ISFILTERED(Column)  
+*Example:*
+dax
+IF(ISFILTERED(Sales[Region]), "Filtered", "Not Filtered")
+
+*Explanation:* Returns a text result based on whether Sales[Region] is directly filtered.
+
+---
+
+## 5. HASONEVALUE  
+*Purpose:* Checks if there is only one value in a column’s current filter context.  
+*Syntax:* HASONEVALUE(Column)  
+*Example:*
+dax
+IF(HASONEVALUE(Sales[Product]), VALUES(Sales[Product]), "Multiple Products")
+
+*Explanation:* Returns the product if there’s only one in the filter context, else a message.
+
+---
+
+## 6. ADDCOLUMNS  
+*Purpose:* Adds calculated columns to a table.  
+*Syntax:* ADDCOLUMNS(Table, ColumnName, Expression)  
+*Example:*
+dax
+ADDCOLUMNS(Sales, "TotalCost", Sales[Quantity] * Sales[UnitPrice])
+
+*Explanation:* Adds a TotalCost column based on quantity and unit price.
+
+---
+
+## 7. SUMMARIZE  
+*Purpose:* Groups data by columns and performs aggregations.  
+*Syntax:* SUMMARIZE(Table, GroupByColumn1, ..., [Name], Expression)  
+*Example:*
+dax
+SUMMARIZE(Sales, Sales[Region], "TotalSales", SUM(Sales[Revenue]))
+
+*Explanation:* Groups by region and calculates total sales for each.
+
+---
+
+## 8. CALCULATETABLE  
+*Purpose:* Evaluates a table expression in a modified filter context.  
+*Syntax:* CALCULATETABLE(Table, Filters...)  
+*Example:*
+dax
+CALCULATETABLE(Sales, Sales[Region] = "East")
+
+*Explanation:* Filters the Sales table to only rows from the East region.
+
+---
+## 9. USERELATIONSHIP  
+*Purpose:* Activates an inactive relationship for a calculation.  
+*Syntax:* USERELATIONSHIP(Column1, Column2)  
+*Example:*
+dax
+CALCULATE(SUM(Sales[Revenue]), USERELATIONSHIP(Sales[Date], Calendar[AlternateDate]))
+
+*Explanation:* Uses an inactive relationship between Sales[Date] and Calendar[AlternateDate].
+
+---
+## 10. CONTAINS  
+*Purpose:* Checks if a value exists in a column or table.  
+*Syntax:* CONTAINS(Table, ColumnName, Value, ...)  
+*Example:*
+dax
+CONTAINS(VALUES(Sales[Product]), Sales[Product], "Gadget")
+
+*Explanation:* Returns TRUE if "Gadget" is found in Sales[Product].
+
+---
+## 11. PATH  
+*Purpose:* Returns a delimited string of parent identifiers from a hierarchy.  
+*Syntax:* PATH(ParentColumn, ChildColumn)  
+*Example:*
+dax
+PATH(Employee[ManagerID], Employee[EmployeeID])
+
+*Explanation:* Returns the management chain for each employee.
+
+---
+## 12. PATHITEM  
+*Purpose:* Extracts a specific item from a PATH result.  
+*Syntax:* PATHITEM(PATHColumn, Position)  
+*Example:*
+dax
+PATHITEM(Employee[Path], 2)
+
+*Explanation:* Gets the second manager in the employee's hierarchy.
+
+---
+## 13. LOOKUPVALUE  
+*Purpose:* Finds a value by searching a column for a match.  
+*Syntax:* LOOKUPVALUE(Result_Column, Search_Column, Search_Value)  
+*Example:*
+dax
+LOOKUPVALUE(Product[Category], Product[ProductID], Sales[ProductID])
+
+*Explanation:* Finds the category for the product ID in the sales table.
+
+---
+## 14. NATURALINNERJOIN / NATURALLEFTOUTERJOIN  
+*Purpose:* Joins two tables based on common columns.  
+*Syntax:* NATURALINNERJOIN(Table1, Table2)  
+*Example:*
+dax
+NATURALINNERJOIN(Customers, Sales)
+
+*Explanation:* Performs an inner join between Customers and Sales using shared columns.
+
+---
+## 15. EXCEPT / INTERSECT / UNION  
+*Purpose:* Performs set operations on tables.  
+*Examples:*
+dax
+EXCEPT(ALL(Customers), ALL(Sales))
+INTERSECT(VALUES(Product[ID]), VALUES(Sales[ProductID]))
+UNION(TableA, TableB)
+
+*Explanation:*  
+- EXCEPT: Rows in Customers but not in Sales  
+- INTERSECT: Common rows between product and sales  
+- UNION: Combines rows from both tables
+---
