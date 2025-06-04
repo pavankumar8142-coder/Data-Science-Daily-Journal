@@ -973,9 +973,7 @@ dax
 # Power BI DAX Guide – Essential Advanced Functions
 
 This guide includes the most important and commonly used advanced DAX functions, each with its purpose, syntax, example, and explanation.
-
 ---
-
 ## 1. RANKX  
 *Purpose:* Returns the ranking of a number in a list of numbers for each row in the table.  
 *Syntax:* RANKX(Table, Expression, [Value], [Order], [Ties])  
@@ -986,7 +984,6 @@ RANKX(ALL(Sales), SUM(Sales[Revenue]))
 *Explanation:* Removes filters and ranks each row by total revenue across all rows.
 
 ---
-
 ## 2. GENERATE  
 *Purpose:* Combines two tables by evaluating a table expression for each row of the first table.  
 *Syntax:* GENERATE(Table1, Table2)  
@@ -997,7 +994,6 @@ GENERATE(VALUES(Product[Category]), VALUES(Sales[CustomerID]))
 *Explanation:* Creates all combinations of product categories and customer IDs.
 
 ---
-
 ## 3. TREATAS  
 *Purpose:* Applies the result of a table expression as a filter to columns from an unrelated table.  
 *Syntax:* TREATAS(TableExpression, Column1, Column2, ...)  
@@ -1008,7 +1004,6 @@ CALCULATE(SUM(Sales[Revenue]), TREATAS(VALUES(Regions[RegionName]), Sales[Region
 *Explanation:* Applies region names from Regions as filters to the Sales table.
 
 ---
-
 ## 4. ISFILTERED  
 *Purpose:* Checks whether a column is being filtered directly.  
 *Syntax:* ISFILTERED(Column)  
@@ -1019,7 +1014,6 @@ IF(ISFILTERED(Sales[Region]), "Filtered", "Not Filtered")
 *Explanation:* Returns a text result based on whether Sales[Region] is directly filtered.
 
 ---
-
 ## 5. HASONEVALUE  
 *Purpose:* Checks if there is only one value in a column’s current filter context.  
 *Syntax:* HASONEVALUE(Column)  
@@ -1030,7 +1024,6 @@ IF(HASONEVALUE(Sales[Product]), VALUES(Sales[Product]), "Multiple Products")
 *Explanation:* Returns the product if there’s only one in the filter context, else a message.
 
 ---
-
 ## 6. ADDCOLUMNS  
 *Purpose:* Adds calculated columns to a table.  
 *Syntax:* ADDCOLUMNS(Table, ColumnName, Expression)  
@@ -1041,7 +1034,6 @@ ADDCOLUMNS(Sales, "TotalCost", Sales[Quantity] * Sales[UnitPrice])
 *Explanation:* Adds a TotalCost column based on quantity and unit price.
 
 ---
-
 ## 7. SUMMARIZE  
 *Purpose:* Groups data by columns and performs aggregations.  
 *Syntax:* SUMMARIZE(Table, GroupByColumn1, ..., [Name], Expression)  
@@ -1052,7 +1044,6 @@ SUMMARIZE(Sales, Sales[Region], "TotalSales", SUM(Sales[Revenue]))
 *Explanation:* Groups by region and calculates total sales for each.
 
 ---
-
 ## 8. CALCULATETABLE  
 *Purpose:* Evaluates a table expression in a modified filter context.  
 *Syntax:* CALCULATETABLE(Table, Filters...)  
