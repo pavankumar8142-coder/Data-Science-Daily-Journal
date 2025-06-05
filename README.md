@@ -982,7 +982,6 @@ dax
 RANKX(ALL(Sales), SUM(Sales[Revenue]))
 
 *Explanation:* Removes filters and ranks each row by total revenue across all rows.
-
 ---
 ## 2. GENERATE  
 *Purpose:* Combines two tables by evaluating a table expression for each row of the first table.  
@@ -992,7 +991,6 @@ dax
 GENERATE(VALUES(Product[Category]), VALUES(Sales[CustomerID]))
 
 *Explanation:* Creates all combinations of product categories and customer IDs.
-
 ---
 ## 3. TREATAS  
 *Purpose:* Applies the result of a table expression as a filter to columns from an unrelated table.  
@@ -1002,7 +1000,6 @@ dax
 CALCULATE(SUM(Sales[Revenue]), TREATAS(VALUES(Regions[RegionName]), Sales[Region]))
 
 *Explanation:* Applies region names from Regions as filters to the Sales table.
-
 ---
 ## 4. ISFILTERED  
 *Purpose:* Checks whether a column is being filtered directly.  
@@ -1012,7 +1009,6 @@ dax
 IF(ISFILTERED(Sales[Region]), "Filtered", "Not Filtered")
 
 *Explanation:* Returns a text result based on whether Sales[Region] is directly filtered.
-
 ---
 ## 5. HASONEVALUE  
 *Purpose:* Checks if there is only one value in a column’s current filter context.  
@@ -1022,7 +1018,6 @@ dax
 IF(HASONEVALUE(Sales[Product]), VALUES(Sales[Product]), "Multiple Products")
 
 *Explanation:* Returns the product if there’s only one in the filter context, else a message.
-
 ---
 ## 6. ADDCOLUMNS  
 *Purpose:* Adds calculated columns to a table.  
@@ -1032,7 +1027,6 @@ dax
 ADDCOLUMNS(Sales, "TotalCost", Sales[Quantity] * Sales[UnitPrice])
 
 *Explanation:* Adds a TotalCost column based on quantity and unit price.
-
 ---
 ## 7. SUMMARIZE  
 *Purpose:* Groups data by columns and performs aggregations.  
@@ -1042,7 +1036,6 @@ dax
 SUMMARIZE(Sales, Sales[Region], "TotalSales", SUM(Sales[Revenue]))
 
 *Explanation:* Groups by region and calculates total sales for each.
-
 ---
 ## 8. CALCULATETABLE  
 *Purpose:* Evaluates a table expression in a modified filter context.  
@@ -1052,7 +1045,6 @@ dax
 CALCULATETABLE(Sales, Sales[Region] = "East")
 
 *Explanation:* Filters the Sales table to only rows from the East region.
-
 ---
 ## 9. USERELATIONSHIP  
 *Purpose:* Activates an inactive relationship for a calculation.  
@@ -1062,7 +1054,6 @@ dax
 CALCULATE(SUM(Sales[Revenue]), USERELATIONSHIP(Sales[Date], Calendar[AlternateDate]))
 
 *Explanation:* Uses an inactive relationship between Sales[Date] and Calendar[AlternateDate].
-
 ---
 ## 10. CONTAINS  
 *Purpose:* Checks if a value exists in a column or table.  
@@ -1072,7 +1063,6 @@ dax
 CONTAINS(VALUES(Sales[Product]), Sales[Product], "Gadget")
 
 *Explanation:* Returns TRUE if "Gadget" is found in Sales[Product].
-
 ---
 ## 11. PATH  
 *Purpose:* Returns a delimited string of parent identifiers from a hierarchy.  
@@ -1082,7 +1072,6 @@ dax
 PATH(Employee[ManagerID], Employee[EmployeeID])
 
 *Explanation:* Returns the management chain for each employee.
-
 ---
 ## 12. PATHITEM  
 *Purpose:* Extracts a specific item from a PATH result.  
@@ -1092,7 +1081,6 @@ dax
 PATHITEM(Employee[Path], 2)
 
 *Explanation:* Gets the second manager in the employee's hierarchy.
-
 ---
 ## 13. LOOKUPVALUE  
 *Purpose:* Finds a value by searching a column for a match.  
