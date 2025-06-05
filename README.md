@@ -1102,8 +1102,7 @@ dax
 LOOKUPVALUE(Product[Category], Product[ProductID], Sales[ProductID])
 
 *Explanation:* Finds the category for the product ID in the sales table.
-
----
+--
 ## 14. NATURALINNERJOIN / NATURALLEFTOUTERJOIN  
 *Purpose:* Joins two tables based on common columns.  
 *Syntax:* NATURALINNERJOIN(Table1, Table2)  
