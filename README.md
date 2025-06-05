@@ -1112,7 +1112,6 @@ dax
 NATURALINNERJOIN(Customers, Sales)
 
 *Explanation:* Performs an inner join between Customers and Sales using shared columns.
-
 ---
 ## 15. EXCEPT / INTERSECT / UNION  
 *Purpose:* Performs set operations on tables.  
