@@ -1121,7 +1121,6 @@ dax
 EXCEPT(ALL(Customers), ALL(Sales))
 INTERSECT(VALUES(Product[ID]), VALUES(Sales[ProductID]))
 UNION(TableA, TableB)
-
 *Explanation:*  
 - EXCEPT: Rows in Customers but not in Sales  
 - INTERSECT: Common rows between product and sales  
