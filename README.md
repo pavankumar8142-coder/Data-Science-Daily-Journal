@@ -1116,6 +1116,7 @@ UNION(TableA, TableB)
 
 ## most commonly used data sets by data scientists
 Titanic (Kaggle)
+
 Why it’s so popular:
 Well-structured, tabular data with a mix of numerical and categorical features (e.g., age, sex, fare, class, etc.).
 A clear binary target (“survived” vs. “did not survive”).
@@ -1127,6 +1128,7 @@ Practicing classification algorithms (logistic regression, random forest, XGBoos
 Demonstrating end-to-end pipelines (data cleaning → modeling → submission).
 
 2. Iris
+
 Why it’s popular:
 Extremely small (150 rows × 5 columns), simple features (sepal/petal length and width), and a three-class target (setosa, versicolor, virginica).
 Ideal for teaching classification, decision boundaries, and basic visualization (scatterplots).
@@ -1136,6 +1138,7 @@ Demonstrating principal component analysis (PCA) to reduce dimensions.
 Quick sanity-check for new ML libraries or pipelines.
 
 3. MNIST (Modified National Institute of Standards and Technology)
+
 Why it’s popular:
 A standardized benchmark for handwritten-digit recognition (60,000 training images + 10,000 test images of 28×28 grayscale pixels).
 Serves as an introductory dataset for image classification, convolutional neural networks (CNNs), and deep learning frameworks.
@@ -1146,6 +1149,7 @@ Benchmarking new models or architectures.
 Teaching data augmentation (rotations, shifts) and visualization of learned filters.
 
 4. CIFAR-10 / CIFAR-100
+
 Why it’s popular:
 A slightly more complex step up from MNIST: 32×32 color images belonging to 10 (CIFAR-10) or 100 (CIFAR-100) classes.
 Used extensively in computer-vision research and coursework.
@@ -1167,6 +1171,7 @@ Showing transfer learning with pre-trained language models (e.g., fine-tuning BE
 
 
 6. Boston Housing (Regression)
+
 Why it’s popular (though somewhat deprecated):
 Predict median home prices in Boston suburbs based on 13 features (crime rate, number of rooms, etc.).
 Classic for regression demonstrations.
@@ -1177,6 +1182,7 @@ Introducing evaluation metrics (RMSE, MAE, R²).
 Illustrating feature importance and multicollinearity.
 
 7. California Housing
+
 Why it’s popular:
 Similar to Boston housing but larger (20,640 rows), with variables like median income, latitude/longitude, etc.
 Clean, ready to go for regression tasks.
@@ -1186,6 +1192,7 @@ Teaching cross-validation and hyperparameter tuning.
 Working with geospatial features (simple scatter maps of house prices).
 
 8. COCO (Common Objects in Context)
+
 Why it’s popular:
 One of the largest and richest datasets for object detection, segmentation, and image captioning.
 Contains ~118,000 images and 250,000+ labeled instances across 80 object categories.
