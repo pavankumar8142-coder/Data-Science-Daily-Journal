@@ -1113,6 +1113,7 @@ UNION(TableA, TableB)
 - UNION: Combines rows from both tables
 ---
 ### Learning power bi day-16
+
 ## most commonly used data sets by data scientists
 Titanic (Kaggle)
 Why it’s so popular:
