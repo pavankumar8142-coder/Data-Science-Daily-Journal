@@ -1112,3 +1112,82 @@ UNION(TableA, TableB)
 - INTERSECT: Common rows between product and sales  
 - UNION: Combines rows from both tables
 ---
+Titanic (Kaggle)
+Why it’s so popular:
+Well-structured, tabular data with a mix of numerical and categorical features (e.g., age, sex, fare, class, etc.).
+A clear binary target (“survived” vs. “did not survive”).
+Plenty of room for feature engineering—handling missing values, creating family‐size features, extracting titles from names, etc.
+Many online tutorials and kernel notebooks walk through the entire ML workflow (EDA → feature engineering → modeling → evaluation).
+Typical use cases:
+Learning exploratory data analysis (EDA) and visualization.
+Practicing classification algorithms (logistic regression, random forest, XGBoost).
+Demonstrating end-to-end pipelines (data cleaning → modeling → submission).
+
+2. Iris
+Why it’s popular:
+Extremely small (150 rows × 5 columns), simple features (sepal/petal length and width), and a three-class target (setosa, versicolor, virginica).
+Ideal for teaching classification, decision boundaries, and basic visualization (scatterplots).
+Typical use cases:
+Illustrating concepts like k-Nearest Neighbors (k-NN), support vector machines (SVM), or decision trees.
+Demonstrating principal component analysis (PCA) to reduce dimensions.
+Quick sanity-check for new ML libraries or pipelines.
+
+3. MNIST (Modified National Institute of Standards and Technology)
+Why it’s popular:
+A standardized benchmark for handwritten-digit recognition (60,000 training images + 10,000 test images of 28×28 grayscale pixels).
+Serves as an introductory dataset for image classification, convolutional neural networks (CNNs), and deep learning frameworks.
+Pre-formatted and already split into train/test sets.
+Typical use cases:
+Demonstrating feedforward neural nets, simple CNNs, and training pipelines in TensorFlow/PyTorch.
+Benchmarking new models or architectures.
+Teaching data augmentation (rotations, shifts) and visualization of learned filters.
+
+4. CIFAR-10 / CIFAR-100
+Why it’s popular:
+A slightly more complex step up from MNIST: 32×32 color images belonging to 10 (CIFAR-10) or 100 (CIFAR-100) classes.
+Used extensively in computer-vision research and coursework.
+Typical use cases:
+Training deeper CNN architectures (ResNet, VGG, DenseNet).
+Exploring data augmentation pipelines (random crops, flips, color jitter).
+Comparing different regularization techniques (dropout, batch norm).
+
+5. IMDB Movie Reviews (Sentiment Analysis)
+
+Why it’s popular:
+A binary sentiment-classification task with 25,000 labeled movie reviews (positive/negative).
+Tokenized and preprocessed versions are available in high-level libraries (e.g., Keras).
+Offers a straightforward introduction to natural language processing (NLP).
+Typical use cases:
+Demonstrating bag-of-words, TF-IDF, and word-embedding (Word2Vec, GloVe) approaches.
+Training simple recurrent neural networks (RNNs) or 1D CNNs.
+Showing transfer learning with pre-trained language models (e.g., fine-tuning BERT).
+
+
+6. Boston Housing (Regression)
+Why it’s popular (though somewhat deprecated):
+Predict median home prices in Boston suburbs based on 13 features (crime rate, number of rooms, etc.).
+Classic for regression demonstrations.
+Note: Recent scikit-learn releases warn about ethical concerns (small size, dated data), so many instructors now prefer the California Housing dataset instead.
+Typical use cases:
+Teaching linear regression, regularization (Ridge, Lasso).
+Introducing evaluation metrics (RMSE, MAE, R²).
+Illustrating feature importance and multicollinearity.
+
+7. California Housing
+Why it’s popular:
+Similar to Boston housing but larger (20,640 rows), with variables like median income, latitude/longitude, etc.
+Clean, ready to go for regression tasks.
+Typical use cases:
+Demonstrating decision-tree-based regressors (Random Forest, Gradient Boosting).
+Teaching cross-validation and hyperparameter tuning.
+Working with geospatial features (simple scatter maps of house prices).
+
+8. COCO (Common Objects in Context)
+Why it’s popular:
+One of the largest and richest datasets for object detection, segmentation, and image captioning.
+Contains ~118,000 images and 250,000+ labeled instances across 80 object categories.
+Typical use cases:
+Training and evaluating state-of-the-art object-detection models (Faster R-CNN, YOLO, SSD).
+Benchmarking instance segmentation (Mask R-CNN).
+Exploring image-captioning tasks using paired text annotations.
+
