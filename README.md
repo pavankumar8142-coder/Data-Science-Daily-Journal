@@ -1216,3 +1216,19 @@ Exploring image-captioning tasks using paired text annotations.
 - Excel
 ---
 *** Excel is used to record and store the data.**
+## Concepts to Learn
+
+1. Data creation  
+2. Designing the data  
+3. Excel home function usage  
+4. Conditional formatting  
+5. Math operations and operators  
+6. Relative functionalities and absolute functionalities  
+7. Text functions  
+8. Date-time functions  
+9. VLOOKUP and HLOOKUP  
+10. Data validation  
+11. Pivot tables  
+12. Design data for pivots  
+13. EDA in Excel  
+14. Data type conversions
