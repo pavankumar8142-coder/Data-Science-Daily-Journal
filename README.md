@@ -1202,3 +1202,17 @@ Benchmarking instance segmentation (Mask R-CNN).
 Exploring image-captioning tasks using paired text annotations.
 
 ###  Learning excel day-17
+# Excel
+
+## Microsoft 365
+- On Windows → Free
+- Otherwise → Paid
+
+### Includes:
+- Word
+- PPT
+- OneDrive
+- Outlook
+- Excel
+---
+*** Excel is used to record and store the data.**
