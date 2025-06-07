@@ -1201,3 +1201,4 @@ Training and evaluating state-of-the-art object-detection models (Faster R-CNN, 
 Benchmarking instance segmentation (Mask R-CNN).
 Exploring image-captioning tasks using paired text annotations.
 
+### learning excel day-17
