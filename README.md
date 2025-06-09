@@ -1217,7 +1217,6 @@ Exploring image-captioning tasks using paired text annotations.
 ---
 *** Excel is used to record and store the data.**
 ## Concepts to Learn
-
 1. Data creation  
 2. Designing the data  
 3. Excel home function usage  
