@@ -1232,4 +1232,5 @@ Exploring image-captioning tasks using paired text annotations.
 12. Design data for pivots  
 13. EDA in Excel  
 14. Data type conversions
+
 ## we can store around 10 lakh 0r 1 million rows and columns-16384 
