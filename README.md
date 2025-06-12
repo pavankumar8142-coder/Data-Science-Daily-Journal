@@ -1216,6 +1216,7 @@ Exploring image-captioning tasks using paired text annotations.
 - Outlook
 - Excel
 ---
+
 *** Excel is used to record and store the data.**
 ## Concepts to Learn
 
