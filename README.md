@@ -1180,6 +1180,7 @@ Typical use cases:
 Teaching linear regression, regularization (Ridge, Lasso).
 Introducing evaluation metrics (RMSE, MAE, R²).
 Illustrating feature importance and multicollinearity.
+
 7. California Housing
 
 Why it’s popular:
